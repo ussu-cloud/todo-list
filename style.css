@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+li::after {
+  content: '';
+  background-image: url(images/icon-close.svg);
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 15%;
+  margin-left: 10px;
+}
+
+
+.title {
+  padding-bottom: 50px;
+}
+
+.task-input {
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.button {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.to-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
